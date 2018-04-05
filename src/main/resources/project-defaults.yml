@@ -1,0 +1,11 @@
+swarm:
+ ejb3:
+   default-sfsb-cache: customcache
+   caches:
+    customcache:
+     passivation-store: custom
+   file-passivation-stores:
+     custom:
+       idle-timeout: 3
+       max-size: 3
+          
